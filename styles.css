@@ -70,3 +70,20 @@
 .owner-actions{margin-top:10px}.btn.danger{background:#fff0ee;color:#9b3026;border:1px solid #e9b6af}.btn.danger:hover{background:#ffe6e2}
 @media(max-width:700px){.language-select{min-width:78px;font-size:11px;padding:8px 23px 8px 7px}.topbar .nav{flex-wrap:nowrap}.topbar .nav .language-select{flex:0 0 auto}.topbar .nav>.btn{flex:0 1 auto}.owner-actions{grid-template-columns:1fr 1fr}}
 @media(max-width:430px){.language-select{min-width:70px;font-size:10px}.topbar .nav>.btn{max-width:105px}.brand span{max-width:105px}}
+/* Harmonised native dropdowns */
+select.field,.searchbox select,.filters select{
+  appearance:none;-webkit-appearance:none;
+  background-color:#fffdf8;
+  background-image:linear-gradient(45deg,transparent 50%,var(--g) 50%),linear-gradient(135deg,var(--g) 50%,transparent 50%);
+  background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;
+  background-size:5px 5px,5px 5px;background-repeat:no-repeat;
+  padding-inline-end:34px;cursor:pointer;
+  font-weight:600;color:var(--g3);
+  box-shadow:0 2px 7px rgba(13,42,27,.035);
+  transition:border-color .18s,box-shadow .18s,background-color .18s;
+}
+select.field:hover,.searchbox select:hover,.filters select:hover{border-color:rgba(181,138,42,.7);background-color:#fffefa}
+select.field:focus,.searchbox select:focus,.filters select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(181,138,42,.12)}
+select.field option{background:#fff;color:var(--ink);font-weight:500;padding:10px}
+html[dir="rtl"] select.field,html[dir="rtl"] .searchbox select,html[dir="rtl"] .filters select{background-position:calc(0% + 13px) 50%,calc(0% + 18px) 50%;padding-left:34px;padding-right:13px}
+@media(max-width:700px){select.field,.searchbox select,.filters select{min-height:46px;border-radius:13px}}
