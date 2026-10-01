@@ -286,3 +286,11 @@ body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;back
 .hidden{display:none!important}
 @media(max-width:800px){.hero{min-height:auto;padding-top:48px}.hero-art{min-height:300px}.sponsored-grid{grid-template-columns:1fr 1fr}.admin-heading{align-items:stretch;flex-direction:column}.admin-kpis{grid-template-columns:repeat(3,1fr)}.admin-row{align-items:flex-start;flex-direction:column}.admin-row-actions{width:100%}.admin-row-actions .btn{flex:1}.admin-ad-form{grid-template-columns:1fr}.admin-ad-form .full{grid-column:auto}}
 @media(max-width:520px){.nav-actions .btn:first-child{display:none}.hero h1{font-size:34px}.sponsored-grid{grid-template-columns:1fr}.admin-login{padding:25px 18px}.admin-login-row{grid-template-columns:1fr}.admin-tabs{overflow:auto}.admin-tab{white-space:nowrap}.footer-actions{flex-wrap:wrap}.footer-actions .btn{flex:1;text-align:center}.nav-actions{gap:5px}.nav-actions .btn{padding:9px 10px;font-size:11px}}
+
+
+/* V4.1 — clear administration navigation */
+.admin-nav-link{font-weight:800!important;color:var(--gold,#d7bf7a)!important}
+.admin-nav-link::before{content:"⌘";margin-inline-end:5px;opacity:.85}
+.admin-footer-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:1px solid rgba(215,191,122,.45);border-radius:12px;color:#fff;text-decoration:none;font-weight:800;font-size:.9rem}
+.admin-footer-link:hover{border-color:#d7bf7a;background:rgba(215,191,122,.08)}
+@media(max-width:760px){.navlinks .admin-nav-link{display:none}.admin-footer-link{width:100%}}
